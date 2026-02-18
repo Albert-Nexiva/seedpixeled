@@ -246,7 +246,7 @@ export default function App() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-accent-pink/30 to-transparent z-10 mix-blend-multiply"></div>
               <img 
-                src="https://picsum.photos/seed/jewelry/1200/1200" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwY0onKDhEdmU1e9YGbqNGyTgZ4ROodBaMXE_9ezPX8OilF_e66TwBAAwZx0q1uJiFWkTrrZ1ZPHO7UhkMAP-5oiH4t1UpzTRwXLtR3MkQakhBAUvbOQeJjz-JSE7RKVYZleTe-KomT8QFDuSwVm4IJz2fVqMPiJJmYUMfh-O6yJ8PIg2E00m82PLEGq7To0QUTkIO0TVdMc-6bEaiCmA26M9fvJvBxjK-bXRvT1OBK2WxeYzfTdk5iXCSLSod13OdxVVB7e0O_1E" 
                 alt="Close up of a woman wearing colorful dangling beaded earrings"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
@@ -309,10 +309,10 @@ export default function App() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {[
-            { name: '8-Bit Cherry Fringe', price: '₹28.00', tag: 'Best Seller', color: 'bg-accent-yellow', img: 'https://picsum.photos/seed/cherry/800/800' },
-            { name: 'Pixel Cloud Studs', price: '₹18.00', tag: null, color: '', img: 'https://picsum.photos/seed/cloud/800/800' },
-            { name: 'Star Power Drop', price: '₹24.00', tag: 'New', color: 'bg-accent-blue', img: 'https://picsum.photos/seed/star/800/800' },
-            { name: 'Retro Heart Dangles', price: '₹22.00', tag: null, color: '', img: 'https://picsum.photos/seed/heart/800/800' }
+            { name: '8-Bit Cherry Fringe', price: '₹28.00', tag: 'Best Seller', color: 'bg-accent-yellow', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRthedtfBZzha9xaweCjshXiXIuTyQZMh7qubqZUyQvmq30fjiMor7VxAYqN0t5PQ9ox368O5DSMxHsVzYoMyfdjWU8yrjDMlb3okIkvNBWlJ_gX3o-httSFN_OMr7Ys9f78iFd03q9zBtFhKTzvySY2b6etny35a3NlWFTH875ilh6uaak7LYhQWDxNkt6wRMMnvLe6xctfY5mo6VJonIfCQK-MKaFg5oD93jhhAOv_8sATRPki371Jsh7vMh4m9EeFEPovShJXY' },
+            { name: 'Pixel Cloud Studs', price: '₹18.00', tag: null, color: '', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAa-lhDbfOMnRGGdawfJV9Fx3-pdK6q5D4tZmbMbrfz6kWvYILMe7wJofKP8oEotWcdf8vYlJJ6lFLzoNETZQmUlwTJd_rLVvq-WtO25Ee8fuQJrKTy8dP2as8kj9VCqwdQIbmDuycb0QSqwWPSSuw2jLeJQyYWg-BhTd-4qmey98_Eac53DYyKZPMCuBSqKt7eIsbYzJ0Xx-NohZ2Ao7kkN0daDM6aFDBGu3pFIeDS0bVyIrMHZSkaJiHq_g9N_qKU9A7WdGoecik' },
+            { name: 'Star Power Drop', price: '₹24.00', tag: 'New', color: 'bg-accent-blue', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAtPzcBg1jf5fbXlz3qyqhB3N76v48PYH8nFqUqckXZJMbn-f9_oFVMPh3qEbeqoPOGleV1x87RU_vaf-zx1z0A0CKu-qmHg2ji-AvUdEBuSU5qP1S5KjdjFuG15NV8o2ttX98-fBFhT9guTW6h-eaPuAcFPgYP2AGVRCk32Outp8IM0mHFttziY5lsJj3Gn-57BoHO-nPdc6MnBImlrjdNf2ANZIrY3MzHPmKnhaTO6HRv5avGldU5DckqDud1Pdd6GEVr12ObDrg' },
+            { name: 'Retro Heart Dangles', price: '₹22.00', tag: null, color: '', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQQB3FQIPCz7z5TxbBcbpmcPq46twSD7pklw23G-KzAwU5LkUzHXsVEWpsJPkGG1srHJROl7bstmj7p_-1lZJqfwPCQZ_j3d0_x5Oa0ELNv1URD3EQkg9w35JSRnuSxPZ_8U38m1VW13ax9H3x_oc5Fo_oh4NZGU9G9BFZiW30PIAjz9hD8rNODgb5jBqQ0We5mRtlvpcFLFMknJCxiyXzl8GSrwNGMCkM2MIyWF4jove0Yf72Ftkit_R1l6iPfW9IF_JQJqrKRTk' }
           ].map((product, i) => (
             <motion.div 
               key={i}

@@ -66,7 +66,7 @@ export default function CustomDesignStudio({ onBack }: { onBack: () => void }) {
           onClick={onBack}
           className="flex items-center gap-2 font-bold uppercase text-sm mb-8 hover:text-primary transition-colors"
         >
-          <ChevronLeft size={20} /> Back to Shop
+          <ChevronLeft size={20} /> Back to Home
         </button>
         
         <div className="text-center mb-12">
