@@ -134,9 +134,9 @@ export default function CustomDesignStudio({ onBack }: { onBack: () => void }) {
             
             <div className="aspect-square w-full max-w-[500px] mx-auto bg-gray-100 rounded-2xl border-2 border-ink shadow-retro relative overflow-hidden group">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5PVD23KVngF58yD1_ixVod4GRdse8ra4NCed1sMlMIVtbhjuznib6aH5jbWBerMdr_XYyj5xBzpYmCQnRbV20kjgJXQCzeY3OpwLu-8mDgfNokjGEaWIdc8rci1JxejTEpDmBtfyrpPR8skW1EIq1cECPAGpGVhPU1-rdPxPILYuf8rTzuYJNMbpMPhdafP87vx6nsgebzf4BPMvx_sMaOP7QRpAY3eaBpXEhnSyY1-mmsBwvuD35v2gn7mK20KMqZiL1vsK8Yo" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQX3EPKdH55FwnRRuFfXQryRZXZy2wXjTXhjAa5JltoTGMEp_ql1Y1JefomBY2Fj6NhoFNMHQYQb9-UnSURbi5tjb6LgyTbGSLaYdDk69JbUWXERlFoTjs8N1mlnluNvWC80MJooPKNaNx-G3oOatdggB_dXbETPDJ7GQQNwgWrtrOunSbsIF5YLIwh_VupnyPFsrgd7arWLXyZQOVaFKwu98mOr3j8Oqo3k6xPxYRxE4dmtY-wYlKNEKvwj6lGqQ3HWUt2wOlI1I" 
                 alt="3D Preview Texture"
-                className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 flex items-center justify-center">

@@ -12,12 +12,12 @@ import {
 import { motion } from 'motion/react';
 
 const PRODUCTS = [
-  { id: 1, name: '8-bit Cherry Earrings', price: 24.00, tag: 'NEW', img: 'https://picsum.photos/seed/cherry/800/800' },
-  { id: 2, name: 'Retro Cloud Choker', price: 32.00, tag: null, img: 'https://picsum.photos/seed/cloud/800/800' },
-  { id: 3, name: 'Pixel Star Charm', price: 15.00, tag: 'LOW STOCK', img: 'https://picsum.photos/seed/star/800/800' },
-  { id: 4, name: 'Game Over Necklace', price: 28.00, tag: null, img: 'https://picsum.photos/seed/game/800/800' },
-  { id: 5, name: 'Potion Bottle Earrings', price: 22.00, tag: null, img: 'https://picsum.photos/seed/potion/800/800' },
-  { id: 6, name: 'Mystery Loot Box', price: 45.00, tag: 'SOLD OUT', img: 'https://picsum.photos/seed/box/800/800' },
+  { id: 1, name: '8-bit Cherry Earrings', price: 124.00, tag: 'NEW', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRthedtfBZzha9xaweCjshXiXIuTyQZMh7qubqZUyQvmq30fjiMor7VxAYqN0t5PQ9ox368O5DSMxHsVzYoMyfdjWU8yrjDMlb3okIkvNBWlJ_gX3o-httSFN_OMr7Ys9f78iFd03q9zBtFhKTzvySY2b6etny35a3NlWFTH875ilh6uaak7LYhQWDxNkt6wRMMnvLe6xctfY5mo6VJonIfCQK-MKaFg5oD93jhhAOv_8sATRPki371Jsh7vMh4m9EeFEPovShJXY' },
+  { id: 2, name: 'Retro Cloud Choker', price: 132.00, tag: null, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAa-lhDbfOMnRGGdawfJV9Fx3-pdK6q5D4tZmbMbrfz6kWvYILMe7wJofKP8oEotWcdf8vYlJJ6lFLzoNETZQmUlwTJd_rLVvq-WtO25Ee8fuQJrKTy8dP2as8kj9VCqwdQIbmDuycb0QSqwWPSSuw2jLeJQyYWg-BhTd-4qmey98_Eac53DYyKZPMCuBSqKt7eIsbYzJ0Xx-NohZ2Ao7kkN0daDM6aFDBGu3pFIeDS0bVyIrMHZSkaJiHq_g9N_qKU9A7WdGoecik' },
+  { id: 3, name: 'Pixel Star Charm', price: 115.00, tag: 'LOW STOCK', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAtPzcBg1jf5fbXlz3qyqhB3N76v48PYH8nFqUqckXZJMbn-f9_oFVMPh3qEbeqoPOGleV1x87RU_vaf-zx1z0A0CKu-qmHg2ji-AvUdEBuSU5qP1S5KjdjFuG15NV8o2ttX98-fBFhT9guTW6h-eaPuAcFPgYP2AGVRCk32Outp8IM0mHFttziY5lsJj3Gn-57BoHO-nPdc6MnBImlrjdNf2ANZIrY3MzHPmKnhaTO6HRv5avGldU5DckqDud1Pdd6GEVr12ObDrg' },
+  { id: 4, name: 'Game Over Necklace', price: 128.00, tag: null, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQQB3FQIPCz7z5TxbBcbpmcPq46twSD7pklw23G-KzAwU5LkUzHXsVEWpsJPkGG1srHJROl7bstmj7p_-1lZJqfwPCQZ_j3d0_x5Oa0ELNv1URD3EQkg9w35JSRnuSxPZ_8U38m1VW13ax9H3x_oc5Fo_oh4NZGU9G9BFZiW30PIAjz9hD8rNODgb5jBqQ0We5mRtlvpcFLFMknJCxiyXzl8GSrwNGMCkM2MIyWF4jove0Yf72Ftkit_R1l6iPfW9IF_JQJqrKRTk' },
+  { id: 5, name: 'Potion Bottle Earrings', price: 122.00, tag: null, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBw5PVD23KVngF58yD1_ixVod4GRdse8ra4NCed1sMlMIVtbhjuznib6aH5jbWBerMdr_XYyj5xBzpYmCQnRbV20kjgJXQCzeY3OpwLu-8mDgfNokjGEaWIdc8rci1JxejTEpDmBtfyrpPR8skW1EIq1cECPAGpGVhPU1-rdPxPILYuf8rTzuYJNMbpMPhdafP87vx6nsgebzf4BPMvx_sMaOP7QRpAY3eaBpXEhnSyY1-mmsBwvuD35v2gn7mK20KMqZiL1vsK8Yo' },
+  { id: 6, name: 'Mystery Loot Box', price: 145.00, tag: 'SOLD OUT', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBw5PVD23KVngF58yD1_ixVod4GRdse8ra4NCed1sMlMIVtbhjuznib6aH5jbWBerMdr_XYyj5xBzpYmCQnRbV20kjgJXQCzeY3OpwLu-8mDgfNokjGEaWIdc8rci1JxejTEpDmBtfyrpPR8skW1EIq1cECPAGpGVhPU1-rdPxPILYuf8rTzuYJNMbpMPhdafP87vx6nsgebzf4BPMvx_sMaOP7QRpAY3eaBpXEhnSyY1-mmsBwvuD35v2gn7mK20KMqZiL1vsK8Yo' },
 ];
 
 export default function Shop({ onBack }: { onBack: () => void }) {

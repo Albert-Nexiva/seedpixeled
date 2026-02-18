@@ -182,16 +182,14 @@ export default function App() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden border-b-2 border-ink">
-        <div className="absolute inset-0 pixel-bg pointer-events-none"></div>
-        
+      <section className="relative w-full overflow-hidden border-b-2 border-ink bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
           {/* Hero Content */}
           <div className="flex flex-col justify-center px-6 py-12 lg:py-20 lg:pl-10 lg:pr-20 z-10">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 bg-white border border-ink rounded-full px-3 py-1 w-fit mb-6 shadow-retro-sm"
+              className="inline-flex items-center gap-2 bg-white border border-ink rounded-full px-3 py-1 w-fit mb-8 shadow-retro-sm"
             >
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
               <span className="text-[10px] font-bold uppercase tracking-wider">New Collection Live</span>
@@ -201,10 +199,10 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.9] tracking-tighter mb-6 text-ink"
+              className="font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tighter mb-8 text-ink"
             >
               Handmade <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-pink">Pixel</span> <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ee5f2b] to-[#ffa8bd]">Pixel</span> <br />
               Perfection
             </motion.h2>
             
@@ -212,7 +210,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg md:text-xl text-gray-700 font-medium mb-10 max-w-md leading-relaxed"
+              className="text-lg md:text-xl text-gray-600 font-medium mb-12 max-w-md leading-relaxed"
             >
               Level up your jewelry box with nostalgic, hand-woven seed bead designs inspired by 8-bit classics.
             </motion.p>
@@ -221,47 +219,46 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-5"
             >
               <button 
                 onClick={() => setCurrentPage('shop')}
-                className="retro-button bg-primary text-white font-bold text-lg px-8 py-4 rounded-lg border-2 border-ink shadow-retro hover:bg-primary-dark flex items-center justify-center gap-2 group"
+                className="retro-button bg-[#ee5f2b] text-white font-bold text-xl px-10 py-5 rounded-xl border-2 border-ink shadow-[6px_6px_0px_0px_#1b110d] hover:bg-[#d94e1e] flex items-center justify-center gap-3 group"
               >
                 Shop Collection
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="retro-button bg-white text-ink font-bold text-lg px-8 py-4 rounded-lg border-2 border-ink shadow-retro hover:bg-gray-50 flex items-center justify-center">
+              <button className="retro-button bg-white text-ink font-bold text-xl px-10 py-5 rounded-xl border-2 border-ink shadow-[6px_6px_0px_0px_#1b110d] hover:bg-gray-50 flex items-center justify-center">
                 View Lookbook
               </button>
             </motion.div>
           </div>
 
           {/* Hero Image */}
-          <div className="relative bg-accent-pink/10 border-t-2 lg:border-t-0 lg:border-l-2 border-ink flex items-center justify-center overflow-hidden">
+          <div className="relative bg-accent-pink/5 border-t-2 lg:border-t-0 lg:border-l-2 border-ink flex items-center justify-center overflow-hidden">
             <motion.div 
-              initial={{ scale: 1.1, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              className="relative w-full h-full min-h-[400px] lg:min-h-[600px] group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="relative w-full h-full min-h-[500px] lg:min-h-[700px] group"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent-pink/30 to-transparent z-10 mix-blend-multiply"></div>
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5PVD23KVngF58yD1_ixVod4GRdse8ra4NCed1sMlMIVtbhjuznib6aH5jbWBerMdr_XYyj5xBzpYmCQnRbV20kjgJXQCzeY3OpwLu-8mDgfNokjGEaWIdc8rci1JxejTEpDmBtfyrpPR8skW1EIq1cECPAGpGVhPU1-rdPxPILYuf8rTzuYJNMbpMPhdafP87vx6nsgebzf4BPMvx_sMaOP7QRpAY3eaBpXEhnSyY1-mmsBwvuD35v2gn7mK20KMqZiL1vsK8Yo" 
-                alt="Handmade pixel beaded jewelry collection"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwY0onKDhEdmU1e9YGbqNGyTgZ4ROodBaMXE_9ezPX8OilF_e66TwBAAwZx0q1uJiFWkTrrZ1ZPHO7UhkMAP-5oiH4t1UpzTRwXLtR3MkQakhBAUvbOQeJjz-JSE7RKVYZleTe-KomT8QFDuSwVm4IJz2fVqMPiJJmYUMfh-O6yJ8PIg2E00m82PLEGq7To0QUTkIO0TVdMc-6bEaiCmA26M9fvJvBxjK-bXRvT1OBK2WxeYzfTdk5iXCSLSod13OdxVVB7e0O_1E" 
+                alt="Close up of a woman wearing colorful dangling beaded earrings"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               
-              {/* Floating Product Tag */}
+              {/* Featured Product Tag - Positioned exactly as in the image */}
               <motion.div 
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="absolute bottom-10 left-10 bg-white border-2 border-ink p-3 shadow-retro z-20 rounded-lg max-w-[200px]"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="absolute bottom-8 left-8 bg-white border-2 border-ink p-4 shadow-[4px_4px_0px_0px_#1b110d] z-20 rounded-xl min-w-[220px]"
               >
-                <p className="font-bold text-[10px] uppercase mb-1 text-gray-500">Featured</p>
-                <p className="font-bold text-sm">Cherry Bomb Dangles</p>
-                <p className="font-pixel text-[10px] text-primary mt-1">₹28.00</p>
+                <p className="font-bold text-[9px] uppercase tracking-widest mb-1 text-gray-400">Featured</p>
+                <p className="font-bold text-base text-ink mb-0.5">Cherry Bomb Dangles</p>
+                <p className="font-pixel text-[10px] text-[#ee5f2b] mt-1 tracking-tighter">₹128.00</p>
               </motion.div>
             </motion.div>
           </div>
@@ -309,10 +306,10 @@ export default function App() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {[
-            { name: '8-Bit Cherry Fringe', price: '₹28.00', tag: 'Best Seller', color: 'bg-accent-yellow', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRthedtfBZzha9xaweCjshXiXIuTyQZMh7qubqZUyQvmq30fjiMor7VxAYqN0t5PQ9ox368O5DSMxHsVzYoMyfdjWU8yrjDMlb3okIkvNBWlJ_gX3o-httSFN_OMr7Ys9f78iFd03q9zBtFhKTzvySY2b6etny35a3NlWFTH875ilh6uaak7LYhQWDxNkt6wRMMnvLe6xctfY5mo6VJonIfCQK-MKaFg5oD93jhhAOv_8sATRPki371Jsh7vMh4m9EeFEPovShJXY' },
-            { name: 'Pixel Cloud Studs', price: '₹18.00', tag: null, color: '', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAa-lhDbfOMnRGGdawfJV9Fx3-pdK6q5D4tZmbMbrfz6kWvYILMe7wJofKP8oEotWcdf8vYlJJ6lFLzoNETZQmUlwTJd_rLVvq-WtO25Ee8fuQJrKTy8dP2as8kj9VCqwdQIbmDuycb0QSqwWPSSuw2jLeJQyYWg-BhTd-4qmey98_Eac53DYyKZPMCuBSqKt7eIsbYzJ0Xx-NohZ2Ao7kkN0daDM6aFDBGu3pFIeDS0bVyIrMHZSkaJiHq_g9N_qKU9A7WdGoecik' },
-            { name: 'Star Power Drop', price: '₹24.00', tag: 'New', color: 'bg-accent-blue', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAtPzcBg1jf5fbXlz3qyqhB3N76v48PYH8nFqUqckXZJMbn-f9_oFVMPh3qEbeqoPOGleV1x87RU_vaf-zx1z0A0CKu-qmHg2ji-AvUdEBuSU5qP1S5KjdjFuG15NV8o2ttX98-fBFhT9guTW6h-eaPuAcFPgYP2AGVRCk32Outp8IM0mHFttziY5lsJj3Gn-57BoHO-nPdc6MnBImlrjdNf2ANZIrY3MzHPmKnhaTO6HRv5avGldU5DckqDud1Pdd6GEVr12ObDrg' },
-            { name: 'Retro Heart Dangles', price: '₹22.00', tag: null, color: '', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQQB3FQIPCz7z5TxbBcbpmcPq46twSD7pklw23G-KzAwU5LkUzHXsVEWpsJPkGG1srHJROl7bstmj7p_-1lZJqfwPCQZ_j3d0_x5Oa0ELNv1URD3EQkg9w35JSRnuSxPZ_8U38m1VW13ax9H3x_oc5Fo_oh4NZGU9G9BFZiW30PIAjz9hD8rNODgb5jBqQ0We5mRtlvpcFLFMknJCxiyXzl8GSrwNGMCkM2MIyWF4jove0Yf72Ftkit_R1l6iPfW9IF_JQJqrKRTk' }
+            { name: '8-Bit Cherry Fringe', price: '₹128.00', tag: 'Best Seller', color: 'bg-accent-yellow', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRthedtfBZzha9xaweCjshXiXIuTyQZMh7qubqZUyQvmq30fjiMor7VxAYqN0t5PQ9ox368O5DSMxHsVzYoMyfdjWU8yrjDMlb3okIkvNBWlJ_gX3o-httSFN_OMr7Ys9f78iFd03q9zBtFhKTzvySY2b6etny35a3NlWFTH875ilh6uaak7LYhQWDxNkt6wRMMnvLe6xctfY5mo6VJonIfCQK-MKaFg5oD93jhhAOv_8sATRPki371Jsh7vMh4m9EeFEPovShJXY' },
+            { name: 'Pixel Cloud Studs', price: '₹118.00', tag: null, color: '', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAa-lhDbfOMnRGGdawfJV9Fx3-pdK6q5D4tZmbMbrfz6kWvYILMe7wJofKP8oEotWcdf8vYlJJ6lFLzoNETZQmUlwTJd_rLVvq-WtO25Ee8fuQJrKTy8dP2as8kj9VCqwdQIbmDuycb0QSqwWPSSuw2jLeJQyYWg-BhTd-4qmey98_Eac53DYyKZPMCuBSqKt7eIsbYzJ0Xx-NohZ2Ao7kkN0daDM6aFDBGu3pFIeDS0bVyIrMHZSkaJiHq_g9N_qKU9A7WdGoecik' },
+            { name: 'Star Power Drop', price: '₹124.00', tag: 'New', color: 'bg-accent-blue', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAtPzcBg1jf5fbXlz3qyqhB3N76v48PYH8nFqUqckXZJMbn-f9_oFVMPh3qEbeqoPOGleV1x87RU_vaf-zx1z0A0CKu-qmHg2ji-AvUdEBuSU5qP1S5KjdjFuG15NV8o2ttX98-fBFhT9guTW6h-eaPuAcFPgYP2AGVRCk32Outp8IM0mHFttziY5lsJj3Gn-57BoHO-nPdc6MnBImlrjdNf2ANZIrY3MzHPmKnhaTO6HRv5avGldU5DckqDud1Pdd6GEVr12ObDrg' },
+            { name: 'Retro Heart Dangles', price: '₹122.00', tag: null, color: '', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQQB3FQIPCz7z5TxbBcbpmcPq46twSD7pklw23G-KzAwU5LkUzHXsVEWpsJPkGG1srHJROl7bstmj7p_-1lZJqfwPCQZ_j3d0_x5Oa0ELNv1URD3EQkg9w35JSRnuSxPZ_8U38m1VW13ax9H3x_oc5Fo_oh4NZGU9G9BFZiW30PIAjz9hD8rNODgb5jBqQ0We5mRtlvpcFLFMknJCxiyXzl8GSrwNGMCkM2MIyWF4jove0Yf72Ftkit_R1l6iPfW9IF_JQJqrKRTk' }
           ].map((product, i) => (
             <motion.div 
               key={i}
