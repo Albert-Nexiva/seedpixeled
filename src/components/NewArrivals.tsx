@@ -12,12 +12,12 @@ import {
 import { motion } from 'motion/react';
 
 const NEW_ARRIVALS = [
-  { id: 1, name: '8-Bit Heart Earrings', price: 24.00, tag: 'NEW', rating: 4.5, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCO-b0nSJUSa7UqR7zWUXkW2MSz5krWPY7YeruuXjnXl8LneO-uO9cA9szpTgka0nf36oxUYunDJM4dhkZxCPC1I9CJjxtXCNnDESpfPSaSTGzQdLccQ4Pm38SkUetF2zjF1mJJHlY8jyPEEKKPEGtjDrYjkxGGrNqzsROz17702SUQkS7vIVQiPlxRkzYl6GOd9iVpOk7so5scHSp6NivbrbBj2aEs2jueKMu2nVO4_F_IjqTkk4pzOiKgnZDNugiRe5Jqp_umqAE' },
-  { id: 2, name: 'Pixel Cloud Choker', price: 32.00, tag: 'HOT', rating: 5.0, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAa-lhDbfOMnRGGdawfJV9Fx3-pdK6q5D4tZmbMbrfz6kWvYILMe7wJofKP8oEotWcdf8vYlJJ6lFLzoNETZQmUlwTJd_rLVvq-WtO25Ee8fuQJrKTy8dP2as8kj9VCqwdQIbmDuycb0QSqwWPSSuw2jLeJQyYWg-BhTd-4qmey98_Eac53DYyKZPMCuBSqKt7eIsbYzJ0Xx-NohZ2Ao7kkN0daDM6aFDBGu3pFIeDS0bVyIrMHZSkaJiHq_g9N_qKU9A7WdGoecik' },
-  { id: 3, name: 'Super Star Studs', price: 18.00, tag: 'RESTOCK', rating: 4.0, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDl6YR1TwF4bwVp-z5-UcCtSGxXZGeeFcGi5x8NvXW115AcA-ssZtwUk_CvkM4QEst2X51eqI2Azzt4W0yksS5WP-ZYo7dP7NNuhZ17LPqD2q_KRmAHnFUHNfIwgtmfN5fH_VWVHdIMDeR50hkcUGImwzCao9RlZCCQnHxzppX9NM6MIHPDuyxbyzU5wIJIrH2yK6OKqBW0gdqm2yrvstVCp3uBF27rOoJoUL-nTtlIuFnxIdm2PbQuV4WcjpIr_CsNIR__qoBEDvg' },
-  { id: 4, name: 'Invader Bracelet', price: 28.00, tag: 'NEW', rating: 5.0, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDGxI7EIjAZpSA9T4iP3-dGnqSF5NBkzwXSjn6nBtNnch5ZoS2tT7sXRYeGfgOb7fMZIngZO9KCPIrOtJfhTrFiw5NYtkgebeeIOmGPh5V6UT9IVw14p3b_v63cNnHRbi3ubDLpXI2A9yi9xgp9098epH0kEFH37LZHLfUckodcA9Ea8WCMeIXvPvL7iwxQyOu9sFKCKwWI8eiiLLM8E7SqGL-yCWdoZYjv7sBWLZx6Wplb28k3t-EVcidNnjcPlD-mOQILk1In0EA' },
-  { id: 5, name: 'Potion Bottle Pendant', price: 35.00, tag: 'LIMITED', rating: 5.0, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBH-fNzeYa5PeDCwjYutKasG_GmcT1oRQ0owPPqURsvwY6fG0J6Fk1PcwsiN5Bq7NhmwL2rXuJqOO7hEYctLQq9vmpWchdF8jFBOFle9Z6kUW1jNxb9dLkRDPZ-Gmkbb9H8eh4LvU7_Vxszzs6RnV41YPpZUhkwuNo-Kj5hrc8grRWTKrflWTQQwoMtbZBs2s0wQJs6eIvqaGEjgMsHO5TMeAra53-XipIxqNo9wRzI_2JwKX5-XnV_b0iMqPUrVB_CQ_W1V-3TFYs' },
-  { id: 6, name: 'Retro Ghost Ring', price: 15.00, tag: 'NEW', rating: 4.5, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCVMqZqD2weJ2-F1P0nD4ycuhHtCNLYuk7ZP7LouExi405B2M44dinLtdVauCUeMVJoEpHlOrfKsjMkF1YT9548ymPhCx0K8Cl663N9tDVSrK20DsxOn8NjO0zVnDqJRN6ZCSdoo7jteIBq97eI1CwxexJlW7nRb3uE_sc4AfOk6Spj9clSmg6KMD1zflH_gI1BJzkJto5sttezUcBZZXY9PdNRvhbMROtpdnSGuHbQmPpsbUi9DQr4oggfzgoqqnG6C5rd_2bhEjI' },
+  { id: 1, name: '8-Bit Heart Earrings', price: 24.00, tag: 'NEW', rating: 4.5, img: 'https://picsum.photos/seed/heart/800/800' },
+  { id: 2, name: 'Pixel Cloud Choker', price: 32.00, tag: 'HOT', rating: 5.0, img: 'https://picsum.photos/seed/cloud/800/800' },
+  { id: 3, name: 'Super Star Studs', price: 18.00, tag: 'RESTOCK', rating: 4.0, img: 'https://picsum.photos/seed/star/800/800' },
+  { id: 4, name: 'Invader Bracelet', price: 28.00, tag: 'NEW', rating: 5.0, img: 'https://picsum.photos/seed/invader/800/800' },
+  { id: 5, name: 'Potion Bottle Pendant', price: 35.00, tag: 'LIMITED', rating: 5.0, img: 'https://picsum.photos/seed/potion/800/800' },
+  { id: 6, name: 'Retro Ghost Ring', price: 15.00, tag: 'NEW', rating: 4.5, img: 'https://picsum.photos/seed/ghost/800/800' },
 ];
 
 export default function NewArrivals({ onBack }: { onBack: () => void }) {
@@ -58,9 +58,9 @@ export default function NewArrivals({ onBack }: { onBack: () => void }) {
             </div>
           </div>
 
-          <div className="flex-1 relative min-h-[400px] lg:min-h-auto">
-            <div className="absolute inset-0 bg-center bg-cover border-l-0 lg:border-l-4 border-ink" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCaPdp6If1HLLEPO47rgS9pyQe-UebepqRHXstZK1dgip1SrKUQ6zWpVnwLB4LuiEFXrcznoUa8iKh38j7HwEbIMLdKqe_5J5rgMbmxvcfWS5rUzfzah5UTxO9h4RulehOpRu0G0Nm1HbJQpesJMzoTO6WQbjeCp3YNnPresdhsH3SBEzs-xfPkASHtioyoS4RW6shHu0L6SN6FewxUT3webPoT9Tbv3QxhJpqIRKODIFwqI1-7jJUgZRYsPFOw8E9wqtNHwo3-oWw")' }}>
-              <div className="absolute bottom-6 right-6 bg-ink text-white font-pixel text-2xl px-4 py-2">Lvl. 99</div>
+          <div className="flex-1 relative min-h-[300px] sm:min-h-[400px] lg:min-h-auto">
+            <div className="absolute inset-0 bg-center bg-cover border-l-0 lg:border-l-4 border-ink" style={{ backgroundImage: 'url("https://picsum.photos/seed/hero/1200/800")' }}>
+              <div className="absolute bottom-6 right-6 bg-ink text-white font-pixel text-xl sm:text-2xl px-4 py-2">Lvl. 99</div>
             </div>
           </div>
         </div>

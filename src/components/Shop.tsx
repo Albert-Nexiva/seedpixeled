@@ -12,17 +12,18 @@ import {
 import { motion } from 'motion/react';
 
 const PRODUCTS = [
-  { id: 1, name: '8-bit Cherry Earrings', price: 24.00, tag: 'NEW', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBbmFqPrbWPLqtrtn2R_VPkRQgIdHDr-xOIOJ5lRFKAhNQYFXQKMncAA_VrY51frJlCvIgfRUUtYCttynQ7Jbmms708krFOtXAsV92I43axkahxC0hjeZYxOEDzkoeSdbWMVhjraEVavnH5uDuy4U0mlN2sdhA1CN5YXcThlqx9cCqj433nKI9j98uVOKlXfg8Iz_FsAbrZWh0bTX6XSSSaRUtWZZb6VdUB6V3comyFhUQJwoAjcfrYO_rgYxvqN2K3GIrP6rXJ0Gw' },
-  { id: 2, name: 'Retro Cloud Choker', price: 32.00, tag: null, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwOLptrEuqgn7DWdzCnIBLRVv79ArjsycXciJvf-oKvbdbCIwg6uDLGIsQbZ4fNOgFGQuiRqYA65VtHa4rGNzFIKj_8coFBBaCqe04MN2kCAwEx1PNHBOXVEtaAWtMqlo--Mr-m8T1xKlUmhBFhNESDGBvRPKy8t8Q2FrTaNBcwXD404vW5BeqbTn48AGSi5CmaRK5KZyKsyCEDife0Of-DHnhsFVraOFiyDAjLCbtkLD1ldXWjai4PkWtJuvRNqsPsfdMNyq1ecs' },
-  { id: 3, name: 'Pixel Star Charm', price: 15.00, tag: 'LOW STOCK', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDky-4MTOcR8GD5bxblUa0hlwLwmQpisFPWvZ3uHZzCBvSXc6Xdv2lXxhmoW2IxAEs23idpBPaFUZ6J-FFmFCUs-rVtNlZfDvafKTNSADzKdnieztZoIYkoWZQlLWe3GiIAADxU2p6V8gKByhUydXeokZYHhBe6do-j-VfXhZP7EMZ-UKm5uT-3NCN8sDk2m315bjzm1ILJcL_7bJ1N6mk1x3oMObiKvN2xvZHcGzCtt_MZJzzfYtU-P_uyuInP1t6qNOdgiEPJAd4' },
-  { id: 4, name: 'Game Over Necklace', price: 28.00, tag: null, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAYKwHg6aSDk0dnrKQ0-FSgnv9RFOYYePODIDZ_xIYEd2S1WqEsWky6Op9kiIK3nVJaFx5w32MT9GP8w45MqIOmKDQPhbGH9-0r-TY8SIBxp23wAGqxKmcS73_VuGe7BNDNzCBdSa8br43VsY3i5NDJK413O79UfriJUncbb8h_7vSSwtRgbK5jvDgerHhUhojiW0bfw00MuSBc7SwsiLJIu--HG0ZQ0NiS3SoPuGwPylWQQ6b9FlZLFH79xLdRhZ7hHHCJQ3KNsFQ' },
-  { id: 5, name: 'Potion Bottle Earrings', price: 22.00, tag: null, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA0D3wTcnEEJIrXn51zDCep8OJbOR-Rh5C9gaH-AXqG8_XNKxtTJupLIwEddxrw83fmbg_YzUzdf0b3hvfF_-uend6tG-hd8ouC6LX3mwlZB1JbuDAvOZUZ6-5yraQiys63btMQipN5eyZRK96PGuFTGVSs7dxhyKJHYq1nE47K86oOt50FFj0stR6skx2M7PaCZRmJJC3kCx67sRlYCYficYLvn7fec-9hNP8DxDtXL_w7JhSNMb0T8-D77Sg2bs1HOjay_Qcq-8k' },
-  { id: 6, name: 'Mystery Loot Box', price: 45.00, tag: 'SOLD OUT', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCo_YTrpwwCAoDRFCzPTRQzbFWuUo02FECVjGKecUUs_rGNZR_19AQnseGqmnm9m5t8xYaFQPv_s4Z2FFiHc48QFmDDMz3Gjk44ILE_VXzARv5uuij_GpFflNCvkHx7TluU_ERbbQw7OQ7T83BXr1g2Tna_QcahIWezMA0sp--scmxwTR8lL39WdG3A72hdhODtHM2OVBbF_L3tcmbVBYlVGBtythgX-5viVdI0XSzUQdK3kQlxs7aXeEZPJLhd2qMsxt0kHVQk0ps' },
+  { id: 1, name: '8-bit Cherry Earrings', price: 24.00, tag: 'NEW', img: 'https://picsum.photos/seed/cherry/800/800' },
+  { id: 2, name: 'Retro Cloud Choker', price: 32.00, tag: null, img: 'https://picsum.photos/seed/cloud/800/800' },
+  { id: 3, name: 'Pixel Star Charm', price: 15.00, tag: 'LOW STOCK', img: 'https://picsum.photos/seed/star/800/800' },
+  { id: 4, name: 'Game Over Necklace', price: 28.00, tag: null, img: 'https://picsum.photos/seed/game/800/800' },
+  { id: 5, name: 'Potion Bottle Earrings', price: 22.00, tag: null, img: 'https://picsum.photos/seed/potion/800/800' },
+  { id: 6, name: 'Mystery Loot Box', price: 45.00, tag: 'SOLD OUT', img: 'https://picsum.photos/seed/box/800/800' },
 ];
 
 export default function Shop({ onBack }: { onBack: () => void }) {
   const [priceRange, setPriceRange] = useState(40);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [showFilters, setShowFilters] = useState(false);
 
   return (
     <div className="bg-bg-light min-h-screen font-sans text-ink">
@@ -33,12 +34,21 @@ export default function Shop({ onBack }: { onBack: () => void }) {
           <ChevronRight size={14} />
           <span className="text-ink font-bold">Shop</span>
         </div>
-        <h1 className="text-5xl md:text-6xl font-pixel text-ink uppercase tracking-wide">Shop All</h1>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <h1 className="text-5xl md:text-6xl font-pixel text-ink uppercase tracking-wide">Shop All</h1>
+          <button 
+            onClick={() => setShowFilters(!showFilters)}
+            className="lg:hidden flex items-center justify-center gap-2 bg-white border-2 border-ink px-6 py-3 font-pixel text-xs uppercase shadow-retro hover:bg-gray-50 transition-colors"
+          >
+            <Filter size={18} />
+            {showFilters ? 'Hide Filters' : 'Show Filters'}
+          </button>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-20 flex flex-col lg:flex-row gap-10">
         {/* Sidebar Filters */}
-        <aside className="w-full lg:w-64 flex-shrink-0 space-y-8">
+        <aside className={`w-full lg:w-64 flex-shrink-0 space-y-8 ${showFilters ? 'block' : 'hidden lg:block'}`}>
           {/* Categories */}
           <div className="border-2 border-ink p-5 bg-white shadow-retro">
             <div className="flex items-center gap-2 mb-4 border-b-2 border-ink pb-2">
