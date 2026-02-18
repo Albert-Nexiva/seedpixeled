@@ -237,17 +237,17 @@ export default function App() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative bg-accent-pink/10 border-t-2 lg:border-t-0 lg:border-l-2 border-ink flex items-center justify-center p-6 lg:p-0 overflow-hidden">
+          <div className="relative bg-accent-pink/10 border-t-2 lg:border-t-0 lg:border-l-2 border-ink flex items-center justify-center overflow-hidden">
             <motion.div 
               initial={{ scale: 1.1, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative w-full h-full min-h-[400px] lg:min-h-auto group"
+              className="relative w-full h-full min-h-[400px] lg:min-h-[600px] group"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-accent-pink/30 to-transparent z-10 mix-blend-multiply"></div>
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwY0onKDhEdmU1e9YGbqNGyTgZ4ROodBaMXE_9ezPX8OilF_e66TwBAAwZx0q1uJiFWkTrrZ1ZPHO7UhkMAP-5oiH4t1UpzTRwXLtR3MkQakhBAUvbOQeJjz-JSE7RKVYZleTe-KomT8QFDuSwVm4IJz2fVqMPiJJmYUMfh-O6yJ8PIg2E00m82PLEGq7To0QUTkIO0TVdMc-6bEaiCmA26M9fvJvBxjK-bXRvT1OBK2WxeYzfTdk5iXCSLSod13OdxVVB7e0O_1E" 
-                alt="Close up of a woman wearing colorful dangling beaded earrings"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5PVD23KVngF58yD1_ixVod4GRdse8ra4NCed1sMlMIVtbhjuznib6aH5jbWBerMdr_XYyj5xBzpYmCQnRbV20kjgJXQCzeY3OpwLu-8mDgfNokjGEaWIdc8rci1JxejTEpDmBtfyrpPR8skW1EIq1cECPAGpGVhPU1-rdPxPILYuf8rTzuYJNMbpMPhdafP87vx6nsgebzf4BPMvx_sMaOP7QRpAY3eaBpXEhnSyY1-mmsBwvuD35v2gn7mK20KMqZiL1vsK8Yo" 
+                alt="Handmade pixel beaded jewelry collection"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
